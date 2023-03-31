@@ -31,13 +31,13 @@ export default App;
 #Options
 
 <ReactCountriesFlags/> takes 4 parameters
-* *isoCode* - its country iso code *
+* *isoCode* - its country iso code 
 
-* *alt* - its image description *
+* *alt* - its image description 
 
-* *width* - its image width *
+* *width* - its image width 
 
-* *height* - its image height * 
+* *height* - its image height 
 
 for example 
 
