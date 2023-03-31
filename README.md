@@ -28,3 +28,8 @@ const App = () => {
 export default App;
 
 ```
+#Options
+
+<ReactCountriesFlags/> takes 4 parameters
+* *isoCode* - its country iso code
+* *alt* - its image description
