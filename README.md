@@ -1,6 +1,6 @@
 # react-countries-flags
 
-#What is this?
+## What is this?
 
 A simple React component for displaying country flags in various operating systems. 
 
@@ -41,7 +41,7 @@ for example
 <ReactCountriesFlags isoCode = {'am'} alt = {'flag'} width = {50} height = {30}/>
 ```
 
-#Options
+## Options
 
 If the flag for the specified ISO code is not found, the component will display a default flag instead.
 
