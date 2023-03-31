@@ -18,7 +18,7 @@ or
 
 To use this component, import it into your React component:
 
-```
+```javascript
 import ReactCountriesFlags from "react-countries-flags";
 
 const App = () => {
