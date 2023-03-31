@@ -14,16 +14,13 @@ function ReactCountriesFlags(_ref) {
     width = _ref$width === void 0 ? 25 : _ref$width,
     _ref$height = _ref.height,
     height = _ref$height === void 0 ? 15 : _ref$height;
-  var url;
+  var flag;
+  var iso = isoCode === null || isoCode === void 0 ? void 0 : isoCode.toString().toLowerCase();
   try {
-    if (isoCode) {
-      url = require("../flags/".concat(isoCode.toLowerCase(), ".png"));
-    }
-  } catch (error) {
-    if (isoCode) {
-      console.warn("Flag for ".concat(isoCode.toLowerCase(), " not found. Using default flag instead."));
-    }
-    url = require("../flags/default.png");
+    flag = require("../src/flags/".concat(iso, ".png"));
+  } catch (e) {
+    iso ? console.warn("Flag for ".concat(iso, " not found. Using default flag instead.")) : console.warn("Using default flag instead.");
+    flag = require("../src/flags/default.png");
   }
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "reactCountriesFlags",
@@ -37,7 +34,7 @@ function ReactCountriesFlags(_ref) {
       alignItems: "center"
     }
   }, /*#__PURE__*/_react["default"].createElement("img", {
-    src: url,
+    src: flag,
     alt: alt,
     style: {
       width: "100%",
