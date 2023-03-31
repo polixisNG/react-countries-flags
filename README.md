@@ -42,7 +42,7 @@ for example
 <ReactCountriesFlags isoCode = {'am'} alt = {'flag'} width = {50} height = {30}/>
 ```
 
-#default values is
+#Default values
 
 * *isoCode* - default.png
 * *alt* - 'flag'
