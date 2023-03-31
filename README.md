@@ -47,11 +47,12 @@ If the flag for the specified ISO code is not found, the component will display 
 
 <ReactCountriesFlags/> takes 4 parameters
 
-| Prop name | Type | Default value | Description |
-| --------- | ---- | ------------- | ----------- |
-| `prop1`   | Type | Default value | Description |
-| `prop2`   | Type | Default value | Description |
-| `prop3`   | Type | Default value | Description |
+| Prop name | Type   | Default value | Description                                    |
+| --------- | ------ | ------------- | ---------------------------------------------- |
+| `isoCode` | string | none          | The ISO code for the country's flag             |
+| `alt`     | string | `"flag"`      | The alt text for the flag                       |
+| `width`   | number | `25`          | The width of the flag in pixels                 |
+| `height`  | number | `15`          | The height of the flag in pixels                |
 
 #Default values
 
