@@ -1,6 +1,6 @@
 {
-  "name": "react-countries-flags2",
-  "version": "1.0.7",
+  "name": "react-countries-flags",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "scripts": {
     "build": "npx babel src --out-dir dist"
