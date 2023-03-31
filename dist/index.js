@@ -17,10 +17,10 @@ function ReactCountriesFlags(_ref) {
   var flag;
   var iso = isoCode === null || isoCode === void 0 ? void 0 : isoCode.toString().toLowerCase();
   try {
-    flag = require("../src/flags/".concat(iso, ".png"));
+    flag = require("../flags/".concat(iso, ".png"));
   } catch (e) {
     iso ? console.warn("Flag for ".concat(iso, " not found. Using default flag instead.")) : console.warn("Using default flag instead.");
-    flag = require("../src/flags/default.png");
+    flag = require("../flags/default.png");
   }
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "reactCountriesFlags",

@@ -4,10 +4,10 @@ export default function ReactCountriesFlags({isoCode, alt = "flag", width = 25, 
     let flag;
     let iso = isoCode?.toString().toLowerCase();
     try {
-        flag = require(`../src/flags/${iso}.png`);
+        flag = require(`../flags/${iso}.png`);
     } catch (e) {
         iso ? console.warn(`Flag for ${iso} not found. Using default flag instead.`) : console.warn(`Using default flag instead.`)
-        flag = require(`../src/flags/default.png`);
+        flag = require(`../flags/default.png`);
     }
     return (
         <div className="reactCountriesFlags"
