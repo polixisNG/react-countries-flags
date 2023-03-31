@@ -8,7 +8,6 @@ export default function ReactCountriesFlags({isoCode, alt = "flag", width = 25, 
         console.warn(`Flag for ${isoCode.toLowerCase()} not found. Using default flag instead.`);
         url = require("../flags/default.png");
     }
-
     return (
         <div className="reactCountriesFlags"
              style={{
