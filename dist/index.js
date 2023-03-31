@@ -7,7 +7,8 @@ exports["default"] = ReactCountriesFlags;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function ReactCountriesFlags(_ref) {
-  var isoCode = _ref.isoCode,
+  var _ref$isoCode = _ref.isoCode,
+    isoCode = _ref$isoCode === void 0 ? 'default.png' : _ref$isoCode,
     _ref$alt = _ref.alt,
     alt = _ref$alt === void 0 ? "flag" : _ref$alt,
     _ref$width = _ref.width,
