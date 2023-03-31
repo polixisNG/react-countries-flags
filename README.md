@@ -55,3 +55,7 @@ If the flag for the specified ISO code is not found, the component will display 
 | `height`  | number | `15`          | The height of the flag in pixels                |
 
 This package should work on all operating systems that support React.
+
+## ISO_3166-2
+
+https://en.wikipedia.org/wiki/ISO_3166-2
