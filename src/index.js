@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ReactCountriesFlags({isoCode, alt = "flag", width = 25, height = 15}) {
+export default function ReactCountriesFlags({isoCode ='default.png', alt = "flag", width = 25, height = 15}) {
     let url;
     try {
         url = require(`../flags/${isoCode.toLowerCase()}.png`);
