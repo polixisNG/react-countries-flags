@@ -7,6 +7,7 @@ Easy way to display world country flags in various operating systems.
 #Installation
 
 `npm i react-countries-flags2`
+
 `yarn add react-countries-flags2`
 
 Then...
