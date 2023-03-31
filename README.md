@@ -41,3 +41,10 @@ for example
 ```
 <ReactCountriesFlags isoCode = {'am'} alt = {'flag'} width = {50} height = {30}/>
 ```
+
+#default values is
+
+* *isoCode* - default.png
+* *alt* - 'flag'
+* *width* - '25'
+* *height* - '15'
