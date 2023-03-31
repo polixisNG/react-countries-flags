@@ -1,16 +1,13 @@
 import React from 'react';
 
 export default function ReactCountriesFlags({isoCode, alt = "flag", width = 25, height = 15}) {
-    let url;
+    let flag;
+    let iso = isoCode?.toString().toLowerCase();
     try {
-        if(isoCode){
-            url = require(`../flags/${isoCode.toLowerCase()}.png`);
-        }
-    } catch (error) {
-        if(isoCode){
-            console.warn(`Flag for ${isoCode.toLowerCase()} not found. Using default flag instead.`);
-        }
-        url = require("../flags/default.png");
+        flag = require(`../src/flags/${iso}.png`);
+    } catch (e) {
+        iso ? console.warn(`Flag for ${iso} not found. Using default flag instead.`) : console.warn(`Using default flag instead.`)
+        flag = require(`../src/flags/default.png`);
     }
     return (
         <div className="reactCountriesFlags"
@@ -23,7 +20,7 @@ export default function ReactCountriesFlags({isoCode, alt = "flag", width = 25, 
                  justifyContent: "center",
                  alignItems: "center",
              }}>
-            <img src={url}
+            <img src={flag}
                  alt={alt}
                  style={{
                      width: "100%",
