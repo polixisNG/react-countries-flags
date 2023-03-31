@@ -32,9 +32,12 @@ export default App;
 
 <ReactCountriesFlags/> takes 4 parameters
 * *isoCode* - its country iso code
+* 
 * *alt* - its image description
+* 
 * *width* - its image width
-* *height* - its image height
+* 
+* *height* - its image height 
 
 for example 
 
