@@ -37,7 +37,7 @@ You can also customize the alt text, width, and height of the flag:
 
 for example 
 
-```
+```javascript
 <ReactCountriesFlags isoCode = {'am'} alt = {'flag'} width = {50} height = {30}/>
 ```
 
