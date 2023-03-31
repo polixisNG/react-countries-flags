@@ -7,8 +7,7 @@ exports["default"] = ReactCountriesFlags;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function ReactCountriesFlags(_ref) {
-  var _ref$isoCode = _ref.isoCode,
-    isoCode = _ref$isoCode === void 0 ? 'default.png' : _ref$isoCode,
+  var isoCode = _ref.isoCode,
     _ref$alt = _ref.alt,
     alt = _ref$alt === void 0 ? "flag" : _ref$alt,
     _ref$width = _ref.width,
@@ -17,7 +16,7 @@ function ReactCountriesFlags(_ref) {
     height = _ref$height === void 0 ? 15 : _ref$height;
   var url;
   try {
-    url = require("../flags/".concat(isoCode.toLowerCase(), ".png"));
+    url = require("../flags/".concat(isoCode === null || isoCode === void 0 ? void 0 : isoCode.toLowerCase(), ".png"));
   } catch (error) {
     console.warn("Flag for ".concat(isoCode.toLowerCase(), " not found. Using default flag instead."));
     url = require("../flags/default.png");
