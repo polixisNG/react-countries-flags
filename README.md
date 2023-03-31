@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # react-countries-flags
 
 ## What is this?
@@ -58,4 +55,3 @@ If the flag for the specified ISO code is not found, the component will display 
 | `height`  | number | `15`          | The height of the flag in pixels                |
 
 This package should work on all operating systems that support React.
->>>>>>> react_countries_flags
