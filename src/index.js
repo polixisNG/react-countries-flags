@@ -33,3 +33,4 @@ var ReactCountriesFlags = function (_a) {
                 backgroundRepeat: "no-repeat",
             } })));
 };
+exports.default = ReactCountriesFlags;

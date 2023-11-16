@@ -40,3 +40,5 @@ const ReactCountriesFlags: FC<ReactCountriesFlagsProps> = ({ isoCode, alt = 'fla
         </div>
     );
 };
+
+export default ReactCountriesFlags;

@@ -49,3 +49,4 @@ var ReactCountriesFlags = function ReactCountriesFlags(_a) {
     }
   }));
 };
+exports["default"] = ReactCountriesFlags;
