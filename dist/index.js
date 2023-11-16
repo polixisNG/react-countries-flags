@@ -1,19 +1,22 @@
 "use strict";
 
+var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = ReactCountriesFlags;
-var _react = _interopRequireDefault(require("react"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-function ReactCountriesFlags(_ref) {
-  var isoCode = _ref.isoCode,
-    _ref$alt = _ref.alt,
-    alt = _ref$alt === void 0 ? "flag" : _ref$alt,
-    _ref$width = _ref.width,
-    width = _ref$width === void 0 ? 25 : _ref$width,
-    _ref$height = _ref.height,
-    height = _ref$height === void 0 ? 15 : _ref$height;
+var react_1 = __importDefault(require("react"));
+var ReactCountriesFlags = function ReactCountriesFlags(_a) {
+  var isoCode = _a.isoCode,
+    _b = _a.alt,
+    alt = _b === void 0 ? 'flag' : _b,
+    _c = _a.width,
+    width = _c === void 0 ? 25 : _c,
+    _d = _a.height,
+    height = _d === void 0 ? 15 : _d;
   var flag;
   var iso = isoCode === null || isoCode === void 0 ? void 0 : isoCode.toString().toLowerCase();
   try {
@@ -22,7 +25,7 @@ function ReactCountriesFlags(_ref) {
     iso ? console.warn("Flag for ".concat(iso, " not found. Using default flag instead.")) : console.warn("Using default flag instead.");
     flag = require("../flags/default.png");
   }
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return react_1["default"].createElement("div", {
     className: "reactCountriesFlags",
     style: {
       width: width + "px",
@@ -33,7 +36,7 @@ function ReactCountriesFlags(_ref) {
       justifyContent: "center",
       alignItems: "center"
     }
-  }, /*#__PURE__*/_react["default"].createElement("img", {
+  }, react_1["default"].createElement("img", {
     src: flag,
     alt: alt,
     style: {
@@ -45,5 +48,4 @@ function ReactCountriesFlags(_ref) {
       backgroundRepeat: "no-repeat"
     }
   }));
-}
-;
+};
